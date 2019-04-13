@@ -73,10 +73,15 @@ File:
   e.g. search KongGun
     
   Keluaran:
+  
   > root
+  
     > folderA
+    
       > KongGun.docx
+      
     > folderB
+    
       > KongGun.xlsx
       
   Cetak semua path dari menuju File/Folder yang dicari
@@ -91,80 +96,141 @@ File:
   e.g. print root
   
   Keluaran:
+  
   > root 9
+  
     > folderA 8
+    
       > nihilego.exe 3
+      
       > santoryuu.exe 4
       
       
 Contoh input 1:
 
 add folderA root
+
 add folderB root
+
 add folderD folderA
+
 add folderE folderA
+
 add folderF root
+
 add folderG root
+
 add folderC root
+
 insert ittoryuu.exe 1 folderE
+
 insert nitoryuu.exe 2 folderB
+
 insert santoryuu.exe 2 folderC
+
 print root
 
 Contoh output 1:
 
 ittoryu.exe added to folderE
+
 nitoryu.exe added to folderB
+
 santoryu.exe added to folderC
+
 > root 13
+
   > folderA 4
+  
     > folderD 1
+    
     > folderE 2
+    
       > ittoryu.exe 1
+      
   > folderB 3
+  
     > nitoryu.exe 2
+    
   > folderC 3
+  
     > santoryu.exe 2
+    
   > folderF 1
+  
   > folderG 1
   
   
 Contoh input 2:
  
 add folderA root
+
 add folderB root
+
 add folderD folderA
+
 add folderE folderA
+
 add folderF root
+
 add folderG root
+
 add folderC root
+
 insert ittoryuu.exe 1 folderE
+
 insert nitoryuu.exe 2 folderB
+
 insert santoryuu.exe 2 folderC
+
 insert haki.pptx 3 folderE
+
 print root
+
 remove folderB
+
 search haki
 
 Contoh output 2:
+
 ittoryu.exe added to folderE
+
 nitoryu.exe added to folderB
+
 santoryu.exe added to folderC
+
 haki.pptx added to folderD
+
 > root 16
+
   > folderA 7
+  
     > folderD 4
+    
       > haki.pptx 3
+      
     > folderE 2
+    
       > ittoryu.exe 1
+      
   > folderB 3
+  
     > nitoryu.exe 2
+    
   > folderC 3
+  
     > santoryu.exe 2
+    
   > folderF 1
+  
   > folderG 1
+  
 Folder folderB removed
+
 > root
+
   > folderA
+  
     > folderD
+    
       > haki.pptx
