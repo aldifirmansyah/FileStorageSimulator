@@ -29,13 +29,15 @@ FOLDER
 
 
 Input dan Output :
-Program akan menerima input untuk command seperti di bawah ini hingga End of
-File:
+Program akan menerima input untuk command seperti di bawah ini hingga End of File:
+
 1. Basic Operation
+
 
   1. add A B
   
   Memasukkan Folder A ke dalam Folder B
+  
   e.g. add folderA root
   
   Perintah ini tidak memiliki keluaran
@@ -44,32 +46,45 @@ File:
   2. insert A.B C D
   
   Memasukkan File A bertipe B dengan ukuran C ke dalam Folder D
+  
   Jika operasi gagal, tidak mengeluarkan apapun
+  
   e.g. insert santoryuu.exe 5 root
   
   Keluaran:
+  
   “A.B added to X”
+  
   X adalah nama Folder tempat A akhirnya dimasukkan
   
   
   3. remove A
   
   Menghapus File/Folder dengan nama A
+  
   Jika A adalah Folder, maka hapus seluruh isinya juga
+  
   Jika A adalah File, maka hapus semua File yang memiliki nama sama
+  
   e.g. remove santoryuu
   
   Keluaran:
+  
   Jika A adalah Folder
+  
   “Folder A removed”
+  
   Jika A adalah File
+  
   “X File A removed”
+  
   X adalah jumlah File A yang berhasil dihapus
   
   
   4. search A
   
   Mencari semua File/Folder dengan nama A di dalam File Storage
+  
   e.g. search KongGun
     
   Keluaran:
@@ -83,14 +98,18 @@ File:
 ```
   
   Cetak semua path dari menuju File/Folder yang dicari
+  
   Jika yang dicari adalah File, cetak juga tipe Filenya
   
   
   5. print A
   
   Mencetak isi dari Folder dengan nama A
+  
   Setiap Folder/File yang berada 1 level lebih dalam dicetak dengan
+  
   indentasi 2 spasi lebih kanan dari Folder di atasnya.
+  
   e.g. print root
   
   Keluaran:
